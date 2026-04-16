@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Attendance System PRO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div id="login" class="login">
+    <h1>Admin Login</h1>
+    <input id="user" placeholder="Username">
+    <input id="pass" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+</div>
+
+<!-- APP -->
+<div id="app" style="display:none;">
+
+<h1>School Attendance System</h1>
+
+<!-- DASHBOARD TABLE -->
+<table class="dashboard-table">
+    <tr>
+        <th>Total Students</th>
+        <th>Present</th>
+        <th>Absent</th>
+    </tr>
+    <tr>
+        <td id="total">0</td>
+        <td id="present">0</td>
+        <td id="absent">0</td>
+    </tr>
+</table>
+
+<!-- CONTROLS -->
+<div class="controls">
+    <input id="name" placeholder="Student Name">
+    <input id="section" placeholder="Section">
+    <button onclick="addStudent()">Add</button>
+</div>
+
+<input id="search" onkeyup="search()" placeholder="Search student...">
+
+<!-- STUDENT TABLE -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Section</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody id="list"></tbody>
+</table>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
