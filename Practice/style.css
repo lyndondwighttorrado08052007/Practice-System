@@ -1,0 +1,75 @@
+body {
+    font-family: Arial;
+    background: #0b1220;
+    color: white;
+    text-align: center;
+}
+
+/* LOGIN */
+.login {
+    margin-top: 120px;
+}
+
+/* DASHBOARD TABLE */
+.dashboard-table {
+    margin: 20px auto;
+    width: 60%;
+    border-collapse: collapse;
+    background: #1e293b;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+    padding: 12px;
+    border: 1px solid #334155;
+}
+
+/* CONTROLS */
+.controls {
+    margin: 10px;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    background: #22c55e;
+    color: white;
+    cursor: pointer;
+}
+
+/* MAIN TABLE */
+.table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #1e293b;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    border-bottom: 1px solid #334155;
+}
+
+/* STATUS BADGES */
+.badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.present {
+    background: #16a34a;
+}
+
+.absent {
+    background: #ef4444;
+}
