@@ -8,12 +8,12 @@ function login() {
     if (u === "admin" && p === "1234") {
         document.getElementById("login").style.display = "none";
         document.getElementById("app").style.display = "block";
+        alert("Login Successful!!");
         render();
     } else {
         alert("Wrong login");
     }
 }
-
 /* ADD */
 function addStudent() {
     let name = document.getElementById("name").value;
